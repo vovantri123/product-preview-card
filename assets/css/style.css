@@ -1,0 +1,125 @@
+html{
+    font-size: 62.5%; /*62.6% * 16px = 10px*/ 
+    /* Vẫn chưa rõ cái rem có tác dụng thiệt sự là gì :v */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /* 14px */ 
+} 
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
+.product-preview-card{
+    width: 350px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px; 
+    overflow: hidden; /*Ngăn hình nó tràn ra card*/ 
+    margin-bottom: 40px;
+    color: hsl(212, 21%, 14%);
+    font-weight: 600;
+    margin-top: 4.0rem;
+}
+
+.product-img{
+    width: 100%; 
+}
+
+.product-content{
+    padding: 20px;
+}
+
+.product-type{
+    letter-spacing: 4px; 
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-name{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.product-description{
+    color: hsl(228, 12%, 48%);
+    line-height: 2.0; 
+    margin-bottom: 24px; 
+}
+
+.price{
+    display: flex; 
+    margin-bottom: 18px; 
+}
+
+.price-preduce{
+    font-size: 3.2rem;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.price-origin{
+    text-decoration: line-through;
+    margin-left: 20px;
+    margin-top: 8px;
+    color: hsl(228, 12%, 48%);
+}
+
+.btn-add-card {
+    width: 100%; 
+    padding: 20px 0;
+    background-color: hsl(158, 36%, 37%);
+    margin: 0 auto;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    -webkit-tap-highlight-color: transparent; /* Xóa hiệu ứng mặc định khi chạm trên mobile */
+}
+
+.btn-add-card i { 
+    margin-right: 12px;
+    font-size: 1.6rem;
+}
+
+.btn-add-card:hover {
+    background-color: hsl(158, 39%, 30%); 
+}
+
+.btn-add-card:active {
+    background-color: hsl(158, 39%, 30%, 0.85); 
+}
+
+@media (min-width: 48em){
+    .product-preview-card{
+        width: 684px;
+        display: flex;   
+    } 
+
+    .product-img{ 
+        width: 342px;
+        height: 100%;
+        object-fit: cover;
+    }
+ 
+    .product-content{
+        padding: 40px;
+    }
+}
+
+
