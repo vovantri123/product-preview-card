@@ -16,10 +16,10 @@ html{
 body{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     /* k thể bỏ luôn  align-items do Giá trị mặc định của align-items là stretch */
     background-color: hsl(30, 38%, 92%);
-    height: 200vh;
+    height: 100vh;
 }
 
 .product-preview-card{
