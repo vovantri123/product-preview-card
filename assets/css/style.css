@@ -16,7 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: hsl(30, 38%, 92%);
-    height: 100vh;
+    height: 200vh;
 }
 
 .product-preview-card{
