@@ -14,7 +14,8 @@ html{
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    /* bỏ luôn  align-items: thì nó sẽ bị stretch  */
     background-color: hsl(30, 38%, 92%);
     height: 200vh;
 }
