@@ -1,6 +1,8 @@
 html{
-    font-size: 62.5%; /*62.6% * 16px = 10px*/ 
-    /* Vẫn chưa rõ cái rem có tác dụng thiệt sự là gì :v */
+    font-size:  calc(0.56 * 16px); 
+   
+    /* Quên thì xem cái font reponsive trong folder HTML W3S. Nó sẽ hơi khác 1 tí so với cái này 
+    do cái này code theo kiểu mobile first */ 
 }
 
 * {
@@ -8,14 +10,14 @@ html{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem; /* 14px */ 
+    font-size: 1.5rem; /* 15px */ 
 } 
 
 body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* bỏ luôn  align-items: thì nó sẽ bị stretch  */
+    /* k thể bỏ luôn  align-items do Giá trị mặc định của align-items là stretch */
     background-color: hsl(30, 38%, 92%);
     height: 200vh;
 }
@@ -107,6 +109,10 @@ body{
 }
 
 @media (min-width: 48em){
+    html {
+        font-size: calc(0.625 * 16px);
+    }
+
     .product-preview-card{
         width: 684px;
         display: flex;   
@@ -123,4 +129,4 @@ body{
     }
 }
 
-
+ 
