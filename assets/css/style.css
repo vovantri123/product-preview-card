@@ -31,6 +31,7 @@ body{
     color: hsl(212, 21%, 14%);
     font-weight: 600;
     margin-top: 4.0rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .product-img{
@@ -90,6 +91,7 @@ body{
     border-radius: 10px;
     font-weight: 600;
     text-decoration: none;
+
     display: block;
     font-size: 1.6rem;
     -webkit-tap-highlight-color: transparent; /* Xóa hiệu ứng mặc định khi chạm trên mobile */
@@ -97,7 +99,8 @@ body{
 
 .btn-add-card i { 
     margin-right: 12px;
-    font-size: 1.6rem;
+    font-size: 1.6rem; 
+   
 }
 
 .btn-add-card:hover {
